@@ -579,7 +579,7 @@ _Cuadro de mando integral: Desempeño y exposición sectorial_
 Los datos finales confirman una estructura de mercado asimétrica. El sector Comercio no solo lidera la deuda con más de 27 mil millones de soles, sino que lo hace con una fuerza laboral mínima (promedio de 1 trabajador), lo que sugiere una alta vulnerabilidad ante imprevistos personales del dueño del negocio. En contraste, sectores como Manufactura y Minería muestran ventas promedio mucho más robustas (superando el millón de soles), lo que indica una mayor capacidad de generación de flujo para cubrir sus obligaciones.
 
 Este dashboard es la herramienta definitiva para la segmentación de la cartera. Mientras que en Comercio y Servicios el banco debe implementar procesos de cobranza automatizados y masivos, en sectores como Agropecuario (con promedio de 5 trabajadores) y Manufactura, el enfoque debe ser el crecimiento y la fidelización, dado que presentan estructuras operativas más sólidas y niveles de ventas que respaldan mejor el capital prestado.
-### Conclusion
+### Conclusión
 
 Este análisis proporcionó información estratégica sobre los puntos ciegos y las vulnerabilidades críticas de la cartera crediticia MYPE 2024.
 
