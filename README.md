@@ -24,9 +24,11 @@ El conjunto de datos se extrajo de un repositorio de carga total y fue normaliza
 
 - **TB_FINANZAS**: Indicadores de desempeño (Ventas, Deuda, Número de Trabajadores, Estado de Exportación).
 
-📂 Dataset Completo: Debido al peso de la data original, se adjunta el acceso externo para replicar el análisis [aquí](https://drive.google.com/drive/folders/1H4TDNAEhiwnwIFiiSF2DyvUEIiYXJk6J?usp=drive_link)
+
 
 ![alt text](TABLA_DATOS.png)
+
+📂 Dataset Completo: Debido al peso de la data original, se adjunta el acceso externo para replicar el análisis [aquí](https://drive.google.com/drive/folders/1H4TDNAEhiwnwIFiiSF2DyvUEIiYXJk6J?usp=drive_link)
 
 ## Tareas y objetivos
 
