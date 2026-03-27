@@ -87,6 +87,7 @@ A continuación, Para mantener un análisis riguroso, se eliminaron las filas qu
 - Identificación y Sector: Se eliminaron registros sin ID o sin sector económico asignado.
 
 - Ubicación Geográfica: Se descartaron registros que carecían de departamento.
+```
 
 ```sql
 -- Eliminar empresas sin identificación o sector --
@@ -101,6 +102,7 @@ DELETE FROM TB_GEOGRAFIA
 WHERE DEPARTAMENTO IS NULL OR DEPARTAMENTO = '';
 
 Finalmente, Un pilar de este proyecto es el análisis de riesgo. Por lo tanto, se eliminaron los registros de empresas que no presentaban deuda o ventas operativas, ya que no aportan valor estadístico al cálculo de solvencia.
+```
 
 ´´´ sql
 -- Eliminar registros sin Deuda (Saldo) o sin Ventas --
@@ -110,7 +112,7 @@ WHERE (SALDO_MIL_SOLES IS NULL OR SALDO_MIL_SOLES = 0);
 DELETE FROM TB_FINANZAS
 WHERE VENTAS_PROM = 0;
 
-```
+
 ## Estandarización de datos 
 
 Una vez depurada la base de datos, se procedió a normalizar los formatos de texto y crear categorías de análisis para asegurar que las agrupaciones en los reportes finales fueran precisas y consistentes.
@@ -118,6 +120,7 @@ Una vez depurada la base de datos, se procedió a normalizar los formatos de tex
 #### A. Normalización de Formatos de Texto
 
 Para evitar duplicidad de categorías por errores de digitación (ej. "Lima" vs " LIMA"), se transformaron los campos geográficos y sectoriales a mayúsculas eliminando espacios innecesarios al inicio y al final de cada cadena mediante las funciones UPPER, LTRIM y RTRIM.
+```
 
 ```sql
 -- Estandarización de ubicación y sectores --
