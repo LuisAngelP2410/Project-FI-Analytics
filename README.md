@@ -111,7 +111,7 @@ WHERE (SALDO_MIL_SOLES IS NULL OR SALDO_MIL_SOLES = 0);
 
 DELETE FROM TB_FINANZAS
 WHERE VENTAS_PROM = 0;
-
+´´´ 
 
 ## Estandarización de datos 
 
@@ -120,9 +120,9 @@ Una vez depurada la base de datos, se procedió a normalizar los formatos de tex
 #### A. Normalización de Formatos de Texto
 
 Para evitar duplicidad de categorías por errores de digitación (ej. "Lima" vs " LIMA"), se transformaron los campos geográficos y sectoriales a mayúsculas eliminando espacios innecesarios al inicio y al final de cada cadena mediante las funciones UPPER, LTRIM y RTRIM.
-```
 
-```sql
+
+´´´sql
 -- Estandarización de ubicación y sectores --
 UPDATE TB_GEOGRAFIA
 SET DEPARTAMENTO = UPPER(LTRIM(RTRIM(DEPARTAMENTO))),
@@ -136,7 +136,7 @@ SET SECTOR = UPPER(LTRIM(RTRIM(SECTOR))),
 #### B. Homologación de Variables Binarias
 
 Se estandarizó la columna EXPORTA para consolidar las distintas formas de registro ("S", "1", "si") en una respuesta única de "SI" o "NO", facilitando el análisis comparativo entre empresas exportadoras y locales.
-
+```
 ```sql
 -- Unificación de respuestas para Exportación --
 UPDATE TB_FINANZAS
