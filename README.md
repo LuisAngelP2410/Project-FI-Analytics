@@ -134,7 +134,7 @@ SET SECTOR = UPPER(LTRIM(RTRIM(SECTOR))),
 #### B. Homologación de Variables Binarias
 
 Se estandarizó la columna EXPORTA para consolidar las distintas formas de registro ("S", "1", "si") en una respuesta única de "SI" o "NO", facilitando el análisis comparativo entre empresas exportadoras y locales.
-```
+
 ```sql
 -- Unificación de respuestas para Exportación --
 UPDATE TB_FINANZAS
